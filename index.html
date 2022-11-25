@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+      <center>
+        <div  id="firstDiv" class="col-xs-12">
+            <h1 id="header_div">Sound Controlled Animals</h1>
+            <br>
+            <p id="header_div p">Note: Play different animal sounds for your device</p>
+        </div>
+        <br>
+        <button id="main_div button" class="btn btn-success" onclick="start()">START</button>
+        <h2 id="result_label">I can hear - </h2>
+        <h2 id="result_accuracy">Accuracy - </h2>
+        <hr>
+        <span>
+            <img id="dog" src="dog.jfif" width="300" height="300" display="none">
+            <img id="cat" src="cat.jfif" width="400" height="300">
+        </span>
+        <br>
+        <hr>
+        <br>
+        <marquee id="footer" style="background-color:rgb(167, 205, 153)" ; direction="left" ; line-height="10" ; loop="20" ;width="70%" onmouseover="this.stop();" onmouseout="this.start()" scrollamount="7">Developed by Mahek Patel </marquee>
+      </center>
+<script src="main.js"></script>
+  </body>
+</html>
